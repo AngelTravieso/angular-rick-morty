@@ -1,0 +1,26 @@
+<div class="card">
+
+    <!-- Card Img -->
+    <img src="{{ character.image }}" alt="{{ character.name }}" class="card-img-top">
+
+    <div class="card-body">
+        <h5 class="card-title">{{ character.name }}</h5>
+        <h6 class="card-subtitle">
+            {{ character.species }} -
+            <span 
+                class="badge rounded-pill"
+                [ngClass]="{
+                    'text-bg-success': character.status === 'Alive',
+                    'text-bg-secondary': character.status === 'unknown',
+                    'text-bg-danger': character.status === 'Dead',
+                }">
+                {{ character.status }}
+            </span>
+        </h6>
+
+        <div class="my-1 py-2">
+            <a href="{{ character.url }}" class="card-link">Read more</a>
+        </div>
+    </div>
+
+</div>
