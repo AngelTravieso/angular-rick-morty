@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --dark-color: #2b2f32;
+    --secondary-color: #6c757d;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+body::-webkit-scrollbar-track {
+background: var(--dark-color);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: var(--secondary-color);
+border-radius: 20px;
+}
