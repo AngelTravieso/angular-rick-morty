@@ -4,6 +4,7 @@ import { Characters } from '../../interfaces/characters-response.interface';
 @Component({
   selector: 'character-card',
   templateUrl: './character-card.component.html',
+  styleUrls: ['./character-card.css'],
 })
 export class CharacterCardComponent implements OnInit {
 
