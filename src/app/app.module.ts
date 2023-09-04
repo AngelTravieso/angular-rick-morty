@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CharactersModule } from './characters/characters.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { CharactersModule } from './characters/characters.module';
   imports: [
     BrowserModule,
     CharactersModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
