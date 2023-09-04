@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {
-  public options: string[] = ['Personajes', 'Localizaciones', 'Episodios'];
+  public options: string[] = ['Characters', 'Locations', 'Episodes'];
 }
