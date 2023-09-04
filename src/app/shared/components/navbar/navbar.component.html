@@ -3,9 +3,10 @@
         <h1>Rick Morty App</h1>
 
         <div class="navbar-btns d-flex gap-2">
-            <button class="btn btn-secondary">Personajes</button>
-            <button class="btn btn-secondary">Localizaciones</button>
-            <button class="btn btn-secondary">Episodios</button>
+            <button *ngFor="let option of options"
+                class="btn btn-secondary">
+                {{ option }}
+            </button>
         </div>
     </div>
 </div>
