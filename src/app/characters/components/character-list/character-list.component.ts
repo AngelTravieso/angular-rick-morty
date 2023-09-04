@@ -12,7 +12,7 @@ export class CharacterListComponent {
     private characterService: CharacterService
   ) {}
 
-
+  // Obtener personajes de CharacterService
   get characters(): Characters[] {
     return this.characterService.characters;
   }
