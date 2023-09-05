@@ -6,10 +6,36 @@
         <shared-search-input-character class="input-group w-25"></shared-search-input-character>
 
         <div class="navbar-btns d-flex gap-2">
+            <li
+                routerLink=""
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{
+                    exact: true,
+                }"
+                class="btn btn-secondary">
+                    Characters
+            </li>
+
+            <li
+                routerLink="locations"
+                routerLinkActive="active"
+                class="btn btn-secondary">
+                    Locations
+            </li>
+            <li
+                routerLink="episodes"
+                routerLinkActive="active"
+                class="btn btn-secondary">
+                    Episodes
+            </li>
+
+        </div>
+
+        <!-- <div class="navbar-btns d-flex gap-2">
             <button *ngFor="let option of options"
                 class="btn btn-secondary">
                 {{ option }}
             </button>
-        </div>
+        </div> -->
     </div>
 </div>
